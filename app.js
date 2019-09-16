@@ -1,14 +1,19 @@
 // TODO
 
-var GroceryList = () => (
+var GroceryListItem = (props) => (
   <ul>
-    <li>Groceries</li>
-    <GroceryListItem name="test" />
+    <li>{props.items[0]}</li>
+    <li>{props.items[1]}</li>
   </ul>
 );
 
-var GroceryListItem = (props) => (
-   <li>hello from component</li>
-  )
+var GroceryList = () => (
+  <div>
+    <h2>Groceries</h2>
+    <GroceryListItem items={['Bread', 'Butter']} />
+  </div>
+);
+
+
 
 ReactDOM.render(<GroceryList />, document.getElementById("app"));
