@@ -24,8 +24,6 @@ onListItemClick() {
 }
 }
 
-//var data=['Bread', 'Butter'];
-
 var GroceryList = (props) => (
   <ul>
     <h2>Groceries</h2>
@@ -34,7 +32,5 @@ var GroceryList = (props) => (
     )}
   </ul>
 );
-
-
 
 ReactDOM.render(<GroceryList items={['Bread', 'Butter']}/>, document.getElementById("app"));
